@@ -3,40 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HCC</title>
+    <title>HERO</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
-<body>
 
+<body>
 <header>
     <h1>TUGAS 1 : HALAMAN WEB MUHAMMAD ALDI ALFATIH</h1>
-    <section id="image">
-      <img src="gambar.jpg" alt="Deskripsi Gambar">
-      <h3>Logo Club</h3>
-  </section>
-    <h2>Habibie Coding Club</h2>
-    <p>Form Pendaftaran Anggota Baru Habibie Coding Club</p>
 </header>
 
-<section id="form">
-    <h2>Form</h2>
-    <form>
-        <label for="name">Nama:</label>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Laki-laki</label><br>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Perempuan</label><br><br>
-        <button type="submit">Kirim</button>
-    </form>
+<!-- Hamburger menu -->
+<section class="top-nav">
+  <div>
+    <img src="gambar.jpg" alt="LOGO">
+  </div>
+  <input id="menu-toggle" type="checkbox" />
+  <label class='menu-button-container' for="menu-toggle">
+  <div class='menu-button'></div>
+</label>
+  <ul class="menu">
+    <li><a href="#image">VISI MISI</a></li>
+    <li><a href="#table1">TABEL DAFTAR ANGGOTA</a></li>
+    <li><a href="#video">VIDEO</a></li>
+    <li><a href="#audio">AUDIO</a></li>
+    <li><a href="#pdf">STRUKTUR ORGANISASI</a></li>
+    <li><a href="#lists">LISTS</a></li>
+    <li><a href="#form">FORM</a></li>
+    <!-- <li><a href="#sosmed">SOSIAL MEDIA</a></li> -->
+    <label class="close-menu" for="menu-toggle">▲</label>
+  </ul>
 </section>
 
-<section id="table">
-    <h2>Tabel Daftar Anggota Habibie Coding Club</h2>
+<section id="image">
+  <img src="gambar.jpg" alt="LOGO">
+  <h2>VISI dan MISI</h2>
+  <h4>VISI</h4>
+  <P>Menjadi pusat inovasi teknologi; Robotika bertujuan untuk meningkatkan 
+    kapasitas teknologi dan keahlian teknis mahasiswa di lingkungan kampus, 
+    serta mendorong integrasi robotika dalam pendidikan dan penelitian.
+  </P>
+  <h4>MISI</h4>
+  <p>1. Mengintegrasikan teknologi robotika dalam kurikulum untuk memastikan mahasiswa memiliki pengetahuan dan keterampilan yang relevan dengan perkembangan teknologi.</p>
+  <p>2. Memberikan peluang kepada mahasiswa untuk belajar dan mengembangkan keterampilan di bidang robotika melalui program-program pelatihan dan workshop yang relevan.</p>
+  <p>3. Mendorong kolaborasi antara mahasiswa dari berbagai program studi untuk mengembangkan solusi robotika yang lebih holistik.</p>
+  <p>4. Mendorong mahasiswa untuk berinovasi dalam menciptakan solusi teknologi yang dapat bermanfaat bagi masyarakat.</p>
+  <p>5. Menjadi wadah bagi mahasiswa untuk saling berbagi pengetahuan, pengalaman, dan ide-ide kreatif dalam bidang robotika.</p>
+  <p>6. Menyumbangkan karya kreatif dan inovatif dalam bidang robotika untuk kepentingan sosial dan lingkungan.</p>
+</section>
+
+<section class="slide current" id="table1">
+    <h2>Tabel Daftar Anggota Habibie Engineering Robotics of Organization (HERO)</h2>
     <table border="1">
         <tr>
             <th>Nama</th>
+            <th>Nim</th>
             <th>Usia</th>
             <th>Gender</th>
             <th>Agama</th>
@@ -49,7 +69,121 @@
             <th>Alasan Masuk</th>
             <th>Jabatan</th>
         </tr>
-        <tr><td>Muhammad Aldi Alfatih</td>
+        <tr>
+            <td>Muhammad Fadel Hasyim</td>
+            <td>221011042</td>
+            <td>19</td>
+            <td>Laki-laki</td>
+            <td>Islam</td>
+            <td></td>
+            <td>Institut Teknologi Bacharuddin Jusuf Habibie</td>
+            <td>Teknologi Produksi dan Industri - Ilmu Komputer</td>
+            <td>Pertama (2022)</td>
+            <td>Merakit</td>
+            <td></td>
+            <td></td>
+            <td>Ketua Umum Habibie Engineering Robotics of Organization (HERO)</td>
+        </tr>
+        <tr>
+            <td>Rifdah Pritama Saputri</td>
+            <td>221011079</td>
+            <td>?</td>
+            <td>Perempuan</td>
+            <td>Islam</td>
+            <td>?</td>
+            <td>Institut Teknologi Bacharuddin Jusuf Habibie</td>
+            <td>Teknologi Produksi dan Industri - Ilmu Komputer</td>
+            <td>Pertama (2022)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Sekretaris HERO</td>
+        </tr>
+        <tr>
+            <td>Nurul Aulia</td>
+            <td>221011084</td>
+            <td>?</td>
+            <td>Perempuan</td>
+            <td>Islam</td>
+            <td>?</td>
+            <td>Institut Teknologi Bacharuddin Jusuf Habibie</td>
+            <td>Teknologi Produksi dan Industri - Ilmu Komputer</td>
+            <td>Pertama (2022)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Bendahara HERO</td>
+        </tr>
+        <tr>
+            <td>Nur Inaya Bahar</td>
+            <td>221011025</td>
+            <td>?</td>
+            <td>Perempuan</td>
+            <td>Islam</td>
+            <td>?</td>
+            <td>Institut Teknologi Bacharuddin Jusuf Habibie</td>
+            <td>Teknologi Produksi dan Industri - Ilmu Komputer</td>
+            <td>Pertama (2022)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Koordinator Bidang Penelitian dan Pengembangan</td>
+        </tr>
+        <tr>
+            <td>Muhammad Irsyad Erlangga</td>
+            <td>221011045</td>
+            <td>19</td>
+            <td>Laki-laki</td>
+            <td>Islam</td>
+            <td>02 April 2004</td>
+            <td>Institut Teknologi Bacharuddin Jusuf Habibie</td>
+            <td>Teknologi Produksi dan Industri - Ilmu Komputer</td>
+            <td>Pertama (2022)</td>
+            <td>Main GTA</td>
+            <td></td>
+            <td></td>
+            <td>Koordinator Bidang Kesekretariatan</td>
+      </tr>
+        <tr>
+            <td>Aditya Mulyadi</td>
+            <td>221011052</td>
+            <td>?</td>
+            <td>Laki-laki</td>
+            <td>Islam</td>
+            <td>?</td>
+            <td>Institut Teknologi Bacharuddin Jusuf Habibie</td>
+            <td>Teknologi Produksi dan Industri - Ilmu Komputer</td>
+            <td>Pertama (2022)</td>
+            <td>Main ML</td>
+            <td></td>
+            <td></td>
+            <td>Koordinator Bidang Hubungan Masyarakat</td>
+        </tr>
+    </table>
+    <button onclick="nextSlide()">Next</button>
+</section>
+        
+<section class="slide" id="table2">
+    <h2>Tabel Daftar Anggota Habibie Coding Club - Slide 2</h2>
+    <table border="1">
+        <tr>
+            <th>Nama</th>
+            <th>Nim</th>
+            <th>Usia</th>
+            <th>Gender</th>
+            <th>Agama</th>
+            <th>Tanggal Lahir</th>
+            <th>Perguruan Tinggi</th>
+            <th>Jurusan - Program Study</th>
+            <th>Angkatan</th>
+            <th>Hobi</th>
+            <th>Impian</th>
+            <th>Alasan Masuk</th>
+            <th>Jabatan</th>
+        </tr>
+        <tr>
+            <td>Muhammad Aldi Alfatih</td>
+            <td>221011044</td>
             <td>21</td>
             <td>Laki - laki</td>
             <td>Islam</td>
@@ -57,120 +191,234 @@
             <td>Institut Teknologi Bacharuddin Jusuf Habibie</td>
             <td>Teknologi Produksi dan Industri - Ilmu Komputer</td>
             <td>Pertama (2022)</td>
-            <td>Belajar berbagai hal baru, Belajar Martial Arts, Calisthenic, Baca Novel dan Komik, Menonton Film, dan Adventure.</td>
+            <td>Martial Arts, Calisthenic, Baca Novel dan Komik, Menonton Film, dan Adventure.</td>
             <td>Merintis Start Up dan menjadi CEO, Ikut World Karate Championship, dan Keliling Dunia.</td>
-            <td>Ingin memeperdalam pengetahuan dalam bidang pemrograman serta menjalin relasi.</td>
-            <td>Ketua Umum Habibie Coding Club, 2022 - Sekarang.</td>
+            <td>Ingin memperluas pengetahuan dalam dunia IT serta menjalin relasi.</td>
+            <td>Anggota Bidang Hubungan Masyarakat</td>
         </tr>
         <tr>
+            <td>Nirmalasari Rodito Sulnas</td>
+            <td>221011022</td>
+            <td>?</td>
+            <td>Perempuan</td>
+            <td>Islam</td>
+            <td>?</td>
+            <td>Institut Teknologi Bacharuddin Jusuf Habibie</td>
+            <td>Teknologi Produksi dan Industri - Ilmu Komputer</td>
+            <td>Pertama (2022)</td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Anggota Bidang Hubungan Masyarakat.</td>
         </tr>
         <tr>
+            <td>Muhammad Faruq Al-Fauzy</td>
+            <td>221011015</td>
+            <td>20</td>
+            <td>Laki-laki</td>
+            <td>Islam</td>
+            <td>08 Februari 2004</td>
+            <td>Institut Teknologi Bacharuddin Jusuf Habibie</td>
+            <td>Teknologi Produksi dan Industri - Ilmu Komputer</td>
+            <td>Pertama (2022)</td>
+            <td>Main Catur</td>
+            <td>Keliling Dunia</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Anggota Bidang Peneltian dan Pengembangan</td>
         </tr>
         <tr>
+            <td>Muhammad Fauzan Iskandar</td>
+            <td>221011063</td>
+            <td>?</td>
+            <td>Laki-laki</td>
+            <td>Islam</td>
+            <td>?</td>
+            <td>Institut Teknologi Bacharuddin Jusuf Habibie</td>
+            <td>Teknologi Produksi dan Industri - Ilmu Komputer</td>
+            <td>Pertama (2022)</td>
             <td></td>
             <td></td>
             <td></td>
+            <td>Anggota Bidang Peneltian dan Pengembangan</td>
+      </tr>
+      <tr>
+            <td>Muhammad Ahyawara</td>
+            <td>221011006</td>
+            <td>?</td>
+            <td>Laki-laki</td>
+            <td>Islam</td>
+            <td>?</td>
+            <td>Institut Teknologi Bacharuddin Jusuf Habibie</td>
+            <td>Teknologi Produksi dan Industri - Ilmu Komputer</td>
+            <td>Pertama (2022)</td>
+            <td>Main ML</td>
+            <td></td>
+            <td></td>
+            <td>Anggota Bidang Kesekretariatan</td>
+      </tr>
+      <tr>
+            <td>Sitti Rahma Yunus</td>
+            <td>221011072</td>
+            <td>?</td>
+            <td>Perempuan</td>
+            <td>Islam</td>
+            <td>?</td>
+            <td>Institut Teknologi Bacharuddin Jusuf Habibie</td>
+            <td>Teknologi Produksi dan Industri - Ilmu Komputer</td>
+            <td>Pertama (2022)</td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+            <td>Anggota Bidang Kesekretariatan</td>
+      </tr>
     </table>
+    <button onclick="nextSlide()">Next</button>
+    <button onclick="PrevSlide()">Previous</button>
+</section>
+
+<section class="slide" id="table3">
+  <h2>Tabel Daftar Anggota Habibie Coding Club - Slide 2</h2>
+  <table border="1">
+      <tr>
+          <th>Nama</th>
+          <th>Nim</th>
+          <th>Usia</th>
+          <th>Gender</th>
+          <th>Agama</th>
+          <th>Tanggal Lahir</th>
+          <th>Perguruan Tinggi</th>
+          <th>Jurusan - Program Study</th>
+          <th>Angkatan</th>
+          <th>Hobi</th>
+          <th>Impian</th>
+          <th>Alasan Masuk</th>
+          <th>Jabatan</th>
+      </tr>
+      <tr>
+          <td>Nur Aini Sri Oktaviani Bahar</td>
+          <td>221011049</td>
+          <td>?</td>
+          <td>Perempuan</td>
+          <td>Islam</td>
+          <td>?</td>
+          <td>Institut Teknologi Bacharuddin Jusuf Habibie</td>
+          <td>Teknologi Produksi dan Industri - Ilmu Komputer</td>
+          <td>Pertama (2022)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Anggota Bidang Peneltian dan Pengembangan</td>
+      </tr>
+      <tr>
+          <td>Nurul Fitrah Muhammad Tahir</td>
+          <td>221031058</td>
+          <td>?</td>
+          <td>Perempuan</td>
+          <td>Islam</td>
+          <td>?</td>
+          <td>Institut Teknologi Bacharuddin Jusuf Habibie</td>
+          <td>Sains - Sistem Informasi</td>
+          <td>Pertama (2022)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Anggota Bidang Peneltian dan Pengembangan</td>
+      </tr>
+      <tr>
+          <td>Jeslina Kondo</td>
+          <td>221011078</td>
+          <td>?</td>
+          <td>Perempuan</td>
+          <td>?</td>
+          <td>?</td>
+          <td>Institut Teknologi Bacharuddin Jusuf Habibie</td>
+          <td>Teknologi Produksi dan Industri - Ilmu Komputer</td>
+          <td>Pertama (2022)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Anggota Bidang Kesekretariatan</td>
+      </tr>
+      <tr>
+          <td>Andi Muh. Kasyful A</td>
+          <td>221011113</td>
+          <td>?</td>
+          <td>Laki-laki</td>
+          <td>Islam</td>
+          <td>?</td>
+          <td>Institut Teknologi Bacharuddin Jusuf Habibie</td>
+          <td>Teknologi Produksi dan Industri - Ilmu Komputer</td>
+          <td>Pertama (2022)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Anggota Bidang Hubungan Masyarakat</td>
+    </tr>
+  </table>
+  <button onclick="PrevSlide()">Previous</button>
 </section>
 
 <section id="video">
     <h2>Video</h2>
     <video controls>
         <source src="video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
     </video>
 </section>
 
 <section id="audio">
     <h2>Audio</h2>
-    <audio controls>
-        <source src="audio.mp3" type="audio/mpeg">
-        Your browser does not support the audio tag.
+    <audio controls autoplay>
+        <source src="isi/videoplayback.m4a" type="audio/mpeg">
     </audio>
 </section>
 
 <section id="pdf">
     <h2>File PDF</h2>
-    <a href="file.pdf" target="_blank">Unduh Struktur Organisasi</a>
+    <a href="isi/STRUKTUR_KEPENGURUSAN_HERO.pdf" target="_blank">Unduh Struktur Organisasi</a>
+</section>
+
+<section id="activities">
+  <div class="list">
+      <h2>Di sini kami belajar apa?</h2>
+      <ol>
+          <li>Belajar Arduino (Mikrocontroller)</li>
+          <li>Belajar C++</li>
+          <li>Belajar Sensor</li>
+          <li>Belajar IOT</li>
+      </ol>
+  </div>
+  <div class="list">
+      <h2>Apa saja yang kami lakukan?</h2>
+      <ul>
+          <li>Membuat Robot Transpotter</li>
+          <li>Menambahkan interaksi dengan C++</li>
+          <li>Membuat rangkaian lampu merah</li>
+          <li>Menggunakan Arduino IDE</li>
+          <li>Mengikuti Kompetisi Robotic</li>
+      </ul>
+  </div>
 </section>
 
 <section id="lists">
-    <h2>Ordered List (OL)</h2>
-    <ol>
-        <li>Belajar HTML</li>
-        <li>Belajar CSS</li>
-        <li>Belajar JavaScript</li>
-        <li>Belajar FrameWork</li>
-    </ol>
-
-    <h2>Unordered List (UL)</h2>
-    <ul>
-        <li>Membuat halaman web</li>
-        <li>Menambahkan interaksi dengan JavaScript</li>
-        <li>Merancang tata letak dengan CSS</li>
-        <li>Menggunakan Bootsrap</li>
-    </ul>
-
-    <h2>Description List (DL)</h2>
+    <h2>Berikut beberapa istilah dalam dunia Robotic dan IOT</h2>
     <dl>
-        <dt>HTML</dt>
-        <dd>HyperText Markup Language</dd>
-        <dt>CSS</dt>
-        <dd>Cascading Style Sheets</dd>
-        <dt>JS</dt>
-        <dd>JavaScript</dd>
+        <dt>MikroController</dt>
+        <dd>MC merupakan rangkaian terpadu (IC) yang digunakan untuk mengendalikan bagian lain dari sebuah sistem elektronik, biasanya melalui unit pemroses mikro (MPU), memori, dan beberapa periferal. Mikrokontroler dioptimalkan untuk aplikasi tertanam yang memerlukan fungsionalitas pemrosesan dan interaksi responsif dengan komponen digital, analog, atau elektromekanik.</dd>
+        <dt>Sensor</dt>
+        <dd>Sensor dapat mengubah sinyal fisik menjadi sinyal listrik yang dapat diolah oleh sistem elektronik.</dd>
+        <dt>C++</dt>
+        <dd>C++ adalah bahasa pemrograman yang sangat relevan dalam robotika. Keunggulannya terletak pada kinerja tinggi, kontrol memori yang presisi, dan kemampuan real-time. Dalam pengembangan robot, C++ memungkinkan manipulasi perangkat keras dengan tingkat rendah, serta mendukung desain pola yang efisien. Dengan C++, kita dapat menghadapi tantangan dalam mengendalikan robot dan membangun sistem yang responsif dan efisien.</dd>
     </dl>
 </section>
+
+<section id="form">
+  <h2>Form Pendaftaran Anggota</h2>
+  <a href="FormPendaftaran.html">Daftar Menjadi Anggota</a>
+</section>
+
 <footer>
-  <p>&copy; 2024 Halaman Web Sederhana. Dibuat oleh Muhammad Aldi Alfatih.</p>
+  <p>&copy; 2024 Halaman Web Habibie Engineering Robotics of Organization. Dibuat oleh Muhammad Aldi Alfatih :B.</p>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
