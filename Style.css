@@ -1,18 +1,56 @@
 /* Style untuk Visi dan Misi */
 body {
-    background-color: #b10d0f;
+    background-color: #1d1a1a;
     color: #ffffff;
 }
 
-#activities {
-    display: flex;
-    justify-content: space-around; /* Untuk memberikan ruang di antara kedua list */
+.menu img {
+    max-height: 40px; /* Atur tinggi maksimum sesuai kebutuhan */
+  }
+
+  th {
+    background-color: #f2f2f2; /* Warna latar belakang sel header */
+    color: #413434; /* Warna teks */
+    padding: 8px; /* Ruang padding */
+    text-align: left; /* Teks rata kiri */
+    border: 1px solid #ddd; /* Garis border */
 }
 
-.list {
-    flex-basis: 45%; /* Untuk memberikan lebar sekitar 45% dari lebar container */
+
+  /* styles.css */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    
 }
 
+button:hover {
+    background-color: #45a049;
+}
+
+  
+
+/* Styling untuk tombol next dan previous */
+.slide button {
+    padding: 10px 20px; /* Ubah padding agar lebih besar */
+    font-size: 16px; /* Sesuaikan ukuran font jika diperlukan */
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.slide button:hover {
+    background-color: #d60000; /* Ubah warna saat hover */
+}
+
+/* Styling untuk logo */
 #image h3 {
     font-size: 24px;
     font-weight: bold;
@@ -27,7 +65,7 @@ body {
 
   #image {
     text-align: center;
-    margin-bottom: 20px; /* Menambahkan margin di bagian bawah section Visi dan Misi */
+    margin-bottom: 20px
 }
   
   #image p {
@@ -36,14 +74,81 @@ body {
     color: #ffffff;
     line-height: 1.5;
   }
+.top-nav img {
+    width: 80px; /* Sesuaikan lebar logo */ /* Sesuaikan tinggi logo */
+    max-height: 70px;
+}
+
+#activities {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list {
+    flex-basis: 45%; 
+}
+
+/* Styling untuk visi misi */
+#visimisi h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+  }
   
+  #visimisi h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  #visimisi {
+    text-align: center;
+    margin-bottom: 20px
+}
+  
+  #visimisi p {
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.5;
+  }
+  
+   /* Style untuk Tabel */
+   #tabel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#tabel h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#tabel a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b10d0f;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#tabel a:hover {
+    background-color: #218838;
+}
+
+
   /* Style untuk Video */
   #video {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px; /* Menambahkan margin di bagian bawah section Video */
+    margin-bottom: 20px;
 }
   
   #video h2 {
@@ -65,7 +170,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px; /* Menambahkan margin di bagian bawah section Audio */
+    margin-bottom: 20px; 
 }
   
   #audio h2 {
@@ -86,7 +191,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px; /* Menambahkan margin di bagian bawah section PDF */
+    margin-bottom: 20px; 
 }
   
   #pdf h2 {
@@ -98,8 +203,8 @@ body {
   #pdf a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #28a745;
-    color: #fff;
+    background-color: #b10d0f;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
   }
@@ -121,7 +226,7 @@ body {
   #lists h2 {
     font-size: 24px;
     font-weight: bold;
-    color: #f8f8f8;
+    color: #ffffff;
   }
   
   #lists ol,
@@ -201,12 +306,12 @@ h2 {
 
 footer {
     background-color: #333; 
-    color: white;
+    color: rgb(255, 4, 4);
     text-align: center; 
     padding: 20px;
-    margin-top: 20px; /* Menambahkan margin di bagian atas footer */
-    padding-top: 20px; /* Menambahkan padding di bagian atas footer */
-    margin-bottom: 20px; /* Menambahkan margin di bagian bawah footer */
+    margin-top: 20px; 
+    padding-top: 20px; 
+    margin-bottom: 20px;
 }
 
 * {
@@ -226,7 +331,7 @@ footer {
 .navbar {
     background-color: #1130ff;
     overflow: hidden;
-    position: relative; /* Mengatur posisi relatif pada navbar */
+    position: relative; 
 }
 
 .top-nav {
@@ -236,7 +341,6 @@ footer {
   justify-content: space-between;
   background-color: #020303;
   background: linear-gradient(to left, #df0000, #dbd1d1);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #FFF;
   height: 50px;
   padding: 1em;
@@ -256,9 +360,8 @@ footer {
 }
 
 .menu a {
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
-    background-color: #ffffff;
   }
   
 
@@ -280,7 +383,7 @@ footer {
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: #fff;
+  background-color: #000000;
   position: absolute;
   height: 4px;
   width: 30px;

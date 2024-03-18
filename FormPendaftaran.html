@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORM</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
     <section id="form">
@@ -12,16 +13,30 @@
             <label for="name">Nama :</label>
             <input type="text" id="name" name="name"><br><br>
             <label for="nim">Nim :</label>
-            <input type="text"  id="nim" nim="nim"><br><br>
+            <input type="text"  id="nim" name="nim"><br><br>
             <label for="email">Email :</label>
             <input type="email" id="email" name="email"><br><br>
+            <label for="nowa">No Telp :</label>
+            <input type="nowa" id="nowa" name="nowa"><br><br>
+            <label for="gender">Jenis Kelamin :</label><br>
             <input type="radio" id="male" name="gender" value="male">
             <label for="male">Laki-laki</label><br>
             <input type="radio" id="female" name="gender" value="female">
             <label for="female">Perempuan</label><br><br>
+            <label for="program">Program Studi :</label><br>
+            <select id="program" name="program">
+                <option value="ilkom">Ilmu Komputer</option>
+                <option value="sisfo">Sistem Informasi</option>
+                <option value="mtk">Matematika</option>
+            </select><br><br>
+            <label for="batch">Angkatan :</label><br>
+            <select id="batch" name="batch">
+                <option value="2021">2022</option>
+                <option value="2022">2023</option>
+            </select><br><br>
             <button type="submit">Kirim</button>
         </form>
-      </section>
-      <!-- b10d0f -->
+        <a href="HalamanWeb.html"><button>Kembali ke halaman utama</button></a>
+    </section>
 </body>
-</htmL>
+</html>

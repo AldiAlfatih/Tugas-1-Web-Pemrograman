@@ -34,6 +34,33 @@ function nextSlide() {
     }
 }
 
+function nextSlide1() {
+    var currentSlide = document.querySelector('.current');
+    currentSlide.classList.remove('current');
+    var nextSlide1 = currentSlide.nextElementSibling;
+    if (nextSlide1) {
+        nextSlide1.classList.add('current');
+    }
+}
+
+function nextSlide2() {
+    var currentSlide = document.querySelector('.current');
+    currentSlide.classList.remove('current');
+    var nextSlide2 = currentSlide.nextElementSibling;
+    if (nextSlide2) {
+        nextSlide2.classList.add('current');
+    }
+}
+
+function nextSlide3() {
+    var currentSlide = document.querySelector('.current');
+    currentSlide.classList.remove('current');
+    var nextSlide = currentSlide.nextElementSibling;
+    if (nextSlide) {
+        nextSlide.classList.add('current');
+    }
+}
+
 function PrevSlide() {
     var currentSlide = document.querySelector('.current');
     currentSlide.classList.remove('current');
@@ -42,3 +69,23 @@ function PrevSlide() {
         PrevSlide.classList.add('current');
     }
 }
+
+function PrevSlide1() {
+    var currentSlide = document.querySelector('.current');
+    currentSlide.classList.remove('current');
+    var PrevSlide1 = currentSlide.previousElementSibling;
+    if (PrevSlide1) {
+        PrevSlide1.classList.add('current');
+    }
+}
+
+
+function PrevSlide2() {
+    var currentSlide = document.querySelector('.current');
+    currentSlide.classList.remove('current');
+    var PrevSlide2 = currentSlide.previousElementSibling;
+    if (PrevSlide2) {
+        PrevSlide2.classList.add('current');
+    }
+}
+
